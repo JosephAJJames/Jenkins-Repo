@@ -23,4 +23,6 @@ def sqrt(num1: int):
     if not isinstance(num1, int):
         return "ensure parameters are integers"
     
+    if num1 < 1:
+        return "num must be > 0"
     return num1 ** 0.5
