@@ -7,9 +7,9 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo "Building.."
+                echo 'Building..'
                 sh '''
-                echo "doing build stuff.."
+                python3 math_help.py
                 '''
             }
         }
@@ -17,15 +17,8 @@ pipeline {
             steps {
                 echo "Testing.."
                 sh '''
+                python3 tests.py
                 echo "doing test stuff.."
-                '''
-            }
-        }
-        stage('Deliver') {
-            steps {
-                echo "Deliver...."
-                sh '''
-                echo "doing delivery stuff.."
                 '''
             }
         }
