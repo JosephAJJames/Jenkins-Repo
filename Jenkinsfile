@@ -18,7 +18,7 @@ pipeline {
                 echo "Testing.."
                 sh '''
                 python3 tests.py
-                echo "doing test stuff.."
+                echo "doing test stuff..."
                 '''
             }
         }
