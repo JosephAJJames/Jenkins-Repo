@@ -50,7 +50,7 @@ class TestSqrtFunction(unittest.TestCase):
         self.assertEqual(sqrt(9), 3)
     
     def test_negativeNumber(self):
-        self.assertEqual(sqrt(-9), "num must be > 0")
+        self.assertEqual(sqrt(-9), "num must be > 0.")
 
     def test_wrongParameter(self):
         self.assertEqual(sqrt("144"), "ensure parameters are integers")
