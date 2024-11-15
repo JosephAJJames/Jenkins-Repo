@@ -17,7 +17,7 @@ def divide(num1: int, num2: int):
     try:
         return num1/num2
     except ZeroDivisionError:
-        return "can't divide by 0"
+        return "can't divide by 0."
 
 def sqrt(num1: int):
     if not isinstance(num1, int):
